@@ -18,7 +18,7 @@ L Device:D D1
 U 1 1 5F078CBC
 P 2250 1100
 F 0 "D1" H 2250 1300 50  0000 C CNN
-F 1 "B0520LW" H 2250 1200 50  0000 C CNN
+F 1 "1N5817" H 2250 1200 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 2250 1100 50  0001 C CNN
 F 3 "~" H 2250 1100 50  0001 C CNN
 F 4 "yes" H 2250 1100 50  0001 C CNN "finalized"
@@ -33,7 +33,7 @@ L Device:D D2
 U 1 1 5F079176
 P 2250 1750
 F 0 "D2" H 2250 1550 50  0000 C CNN
-F 1 "B0520LW" H 2250 1650 50  0000 C CNN
+F 1 "1N5817" H 2250 1650 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 2250 1750 50  0001 C CNN
 F 3 "~" H 2250 1750 50  0001 C CNN
 F 4 "yes" H 2250 1750 50  0001 C CNN "finalized"
@@ -64,19 +64,6 @@ F 2 "" H 2400 1750 50  0001 C CNN
 F 3 "" H 2400 1750 50  0001 C CNN
 	1    2400 1750
 	0    1    1    0   
-$EndComp
-$Comp
-L Regulator_Linear:LM1117-3.3 U2
-U 1 1 5F07BDDA
-P 4650 1200
-F 0 "U2" H 4650 1442 50  0000 C CNN
-F 1 "LM1117-3.3" H 4650 1351 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4650 1200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 4650 1200 50  0001 C CNN
-F 4 "yes" H 4650 1200 50  0001 C CNN "finalized"
-F 5 "LM1117IMP-3.3/NOPB" H 4650 1200 50  0001 C CNN "mpn"
-	1    4650 1200
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR010
@@ -120,21 +107,6 @@ F 7 "GCM188R91E104KA37D" H 5600 1350 50  0001 C CNN "mpn alt"
 F 8 "bypass" H 5600 1350 50  0001 C CNN "Reqs"
 	1    5600 1350
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB3
-U 1 1 5F08106E
-P 5950 1100
-F 0 "FB3" H 5850 1100 50  0000 R CNN
-F 1 "Ferrite Bead" H 5850 1145 50  0001 R CNN
-F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5880 1100 50  0001 C CNN
-F 3 "~" H 5950 1100 50  0001 C CNN
-F 4 "742792651" H 5950 1100 50  0001 C CNN "mpn"
-F 5 "yes" H 5950 1100 50  0001 C CNN "finalized"
-F 6 "" H 5950 1100 50  0001 C CNN "mpn specs"
-F 7 ">500mA DC current" H 5950 1100 50  0001 C CNN "Reqs"
-	1    5950 1100
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4950 1200 5200 1200
@@ -233,25 +205,6 @@ $EndComp
 Wire Wire Line
 	3750 1200 4100 1200
 Connection ~ 4100 1200
-$Comp
-L Device:Ferrite_Bead_Small FB2
-U 1 1 5F08BA03
-P 1800 1750
-F 0 "FB2" V 1945 1750 50  0000 C CNN
-F 1 "Ferrite Bead" V 1946 1750 50  0001 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1730 1750 50  0001 C CNN
-F 3 "~" H 1800 1750 50  0001 C CNN
-F 4 "742792651" H 1800 1750 50  0001 C CNN "mpn"
-F 5 "yes" H 1800 1750 50  0001 C CNN "finalized"
-F 6 "" H 1800 1750 50  0001 C CNN "mpn specs"
-F 7 ">500mA DC current" H 1800 1750 50  0001 C CNN "Reqs"
-	1    1800 1750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1900 1100 2100 1100
-Wire Wire Line
-	1900 1750 2100 1750
 Text Notes 6050 1700 0    50   ~ 0
 Power consumption: 65-100mA, 0.7-1.2W\nPower dissipated: 0.8W\nHeatsink area: 1.15in^2\nThermal resistance: 66 C/W (estimated)\nMaximum thermal resistance: 118 C/W\n
 $Comp
@@ -346,29 +299,10 @@ Wire Wire Line
 Connection ~ 2550 3100
 Text GLabel 2850 3100 2    50   Input ~ 0
 VREF-10
-$Comp
-L Device:Ferrite_Bead_Small FB1
-U 1 1 5F08907D
-P 1800 1100
-F 0 "FB1" V 1945 1100 50  0000 C CNN
-F 1 "Ferrite Bead" V 1946 1100 50  0001 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1730 1100 50  0001 C CNN
-F 3 "~" H 1800 1100 50  0001 C CNN
-F 4 "742792651" H 1800 1100 50  0001 C CNN "mpn"
-F 5 "yes" H 1800 1100 50  0001 C CNN "finalized"
-F 6 "" H 1800 1100 50  0001 C CNN "mpn specs"
-F 7 ">500mA DC current" H 1800 1100 50  0001 C CNN "Reqs"
-	1    1800 1100
-	0    -1   -1   0   
-$EndComp
 Text HLabel 1350 1100 0    50   Input ~ 0
 -12v-raw
 Text HLabel 1350 1750 0    50   Input ~ 0
 +12v-raw
-Wire Wire Line
-	1350 1750 1700 1750
-Wire Wire Line
-	1350 1100 1700 1100
 Text Notes 6050 1950 0    50   ~ 0
 Alternatives considered:\n- LD2981 (< 100mA)\n- TPS62135 (> 100mA)
 $Comp
@@ -466,7 +400,24 @@ F 3 "~" H 5950 1000 50  0001 C CNN
 	1    5950 1000
 	0    1    1    0   
 $EndComp
-Connection ~ 5950 1000
 Text Notes 1400 3650 0    50   ~ 0
 cathode current:\n75 uA to 15 mA\n660 uA (sim)\n
+Wire Wire Line
+	1350 1100 2100 1100
+Wire Wire Line
+	1350 1750 2100 1750
+Wire Wire Line
+	5950 1200 5950 1000
+Connection ~ 5950 1000
+$Comp
+L Regulator_Linear:LM1117-3.3 U?
+U 1 1 6119BE38
+P 4650 1200
+F 0 "U?" H 4650 1442 50  0000 C CNN
+F 1 "LM1117-3.3" H 4650 1351 50  0000 C CNN
+F 2 "" H 4650 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 4650 1200 50  0001 C CNN
+	1    4650 1200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
