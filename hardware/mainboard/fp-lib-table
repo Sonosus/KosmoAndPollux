@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name mainboard)(type KiCad)(uri ${KIPRJMOD}/mainboard.pretty)(options "")(descr ""))
-  (lib (name Sonosus)(type KiCad)(uri ${KISYSMOD}/Sonosus.pretty)(options "")(descr ""))
-)
